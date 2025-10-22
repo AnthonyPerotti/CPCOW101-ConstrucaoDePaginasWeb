@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site de Notícias</h1>
+        <nav>
+            <ul>
+                <li><a href="#boas-vindas">Início</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="boas-vindas">
+            <h2>Bem-vindo!</h2>
+            <p>Este é um site de exemplo criado para a atividade de HTML.</p>
+        </section>
+
+        <section id="noticias">
+            <h2>Notícias</h2>
+            
+            <article>
+                <h3>Cidades investem em energia solar</h3>
+                <p>O uso de energia solar cresceu 20% no último ano no Brasil. Além da economia, a tecnologia ajuda a reduzir a emissão de gases poluentes e já é considerada essencial para o futuro sustentável.</p>
+            </article>
+
+            <article>
+                <h3>Cientistas descobrem novo exoplaneta parecido com a Terra</h3>
+                <p>Astrônomos anunciaram a descoberta de um planeta localizado a 120 anos-luz da Terra, com características muito semelhantes ao nosso. Ele pode se tornar um dos principais alvos de futuras missões espaciais.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Links Relacionados</h2>
+            <ul>
+                <li><a href="https://www.google.com" target="_blank">Google</a></li>
+                <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+            </ul>
+        </aside>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Atividade HTML - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

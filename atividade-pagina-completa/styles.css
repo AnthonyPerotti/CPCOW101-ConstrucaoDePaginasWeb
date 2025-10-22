@@ -1,0 +1,92 @@
+/* Fonte global */
+body {
+    background-color: #f9f9f9;
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #3366cc;
+}
+header h1 {
+    margin: 0;
+}
+header p {
+    margin: 5px 0 15px 0;
+    color: #555;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+nav a {
+    color: #3366cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #ff6600; /* muda cor no hover */
+    text-decoration: underline; /* sublinha no hover */
+}
+
+/* Layout principal com duas colunas */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* esquerda maior, direita menor */
+    gap: 20px;
+    padding: 20px;
+}
+section, article, aside {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Formulário */
+form {
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+button {
+    background-color: #3366cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #ff6600; /* cor diferente no hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
