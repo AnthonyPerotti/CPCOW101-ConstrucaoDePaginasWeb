@@ -42,22 +42,26 @@ Criar um site informativo para a **Cafeteria Grão & Canto**, permitindo que cli
 - SEO básico (meta tags e títulos descritivos).
 
 
-# Fluxograma / Mapa de Navegação
+## 🗺️ Mapa de Navegação e Fluxo
 
+### Estrutura de Páginas
+
+```text
 Home
-├── Menu / Produtos
-│    ├── Cafés
-│    ├── Bebidas Quentes
-│    ├── Bebidas Frias
-│    ├── Lanches & Doces
-│    └── Combos & Promoções
-├── Eventos
-│    └── Reservar espaço (em desenvolvimento)
-├── Sobre
-│    └── História e equipe
-└── Contato
-     ├── Formulário de mensagem
-     └── Mapa interativo
++-- Menu / Produtos
+|   +-- Cafés
+|   +-- Bebidas Quentes
+|   +-- Bebidas Frias
+|   +-- Lanches & Doces
+|   +-- Combos & Promoções
++-- Eventos
+|   +-- Reservar espaço (em desenvolvimento)
++-- Sobre
+|   +-- História e equipe
++-- Contato
+    +-- Formulário de mensagem
+    +-- Mapa interativo
+```
 
 ## Fluxo de Usuário
 1. Home → Menu → Escolher produto
