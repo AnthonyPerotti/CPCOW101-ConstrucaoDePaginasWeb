@@ -1,0 +1,49 @@
+/* Estilos Gerais */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container para centralizar o conteúdo */
+body {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 2em 0;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos das Listas */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
