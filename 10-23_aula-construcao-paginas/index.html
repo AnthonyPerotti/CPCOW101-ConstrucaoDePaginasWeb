@@ -3,18 +3,45 @@
 
 <head>
     <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
     <h1>João da Silva</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
     <p>Desenvolvedor Web em formação.</p>
+    <p>
+        Veja meus projetos no
+        <a href="https://github.com/exemplo" target="_blank" rel="noopener noreferrer"
+            title="Abre o perfil do GitHub em uma nova aba">
+            meu GitHub
+        </a>.
+    </p>
     <hr>
     <h2>Minhas Habilidades</h2>
     <ul>
         <li>HTML5 e Semântica</li>
-        <li>CSS e Design Responsivo</li>
+        <li>CSS e Design Responsivo
+            <ul>
+                <li>Flexbox</li>
+                <li>Grid Layout</li>
+            </ul>
+        </li>
         <li>Lógica de Programação</li>
     </ul>
+    <hr>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato pelas redes sociais:</p>
+        <!-- Exemplo de imagem como link -->
+        <a href="https://linkedin.com/in/exemplo">
+            <img src="icon-linkedin.png" alt="Perfil no LinkedIn" width="32">
+        </a>
+    </section>
 </body>
 
 </html>
