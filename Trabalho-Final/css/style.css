@@ -1,11 +1,16 @@
-/* Reset básico */
+/* ============================================
+   ESTILO FINAL - PORTFÓLIO ACADÊMICO UFSM
+   Autor: Seu Nome
+   Última atualização: 30/10/2025
+   ============================================ */
+
+/* ========== RESET E BASE ========== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo do site */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     line-height: 1.6;
@@ -14,14 +19,21 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    transition: background-color 0.4s, color 0.4s;
 }
 
-/* Cabeçalho e navegação */
+/* ========== CABEÇALHO E NAVEGAÇÃO ========== */
 header {
     background-color: #003366;
     color: #fff;
     padding: 1.2rem 0;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
 }
 
 nav ul {
@@ -29,28 +41,37 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 0.8rem;
+    flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
-    transition: color 0.3s;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    color: #f4d03f;
+    background-color: #f4d03f;
+    color: #003366;
 }
 
-/* Conteúdo principal */
+nav a.ativo {
+    border-bottom: 2px solid #f4d03f;
+}
+
+/* ========== CONTEÚDO PRINCIPAL ========== */
 main {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
     padding: 2rem 10%;
     background-color: #fff;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+section {
+    margin-bottom: 2.5rem;
 }
 
 section h2 {
@@ -60,11 +81,272 @@ section h2 {
     padding-bottom: 0.3rem;
 }
 
-/* Rodapé */
+/* ========== IMAGENS ========== */
+.foto, .projeto-img {
+    width: 200px;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+}
+
+/* ========== TABELAS ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.7rem;
+    text-align: left;
+}
+
+th {
+    background-color: #e8ecf3;
+    color: #003366;
+}
+
+/* ========== BOTÕES E LINKS ========== */
+.botao {
+    display: inline-block;
+    background-color: #003366;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #002244;
+}
+
+/* ========== RODAPÉ ========== */
 footer {
     background-color: #003366;
     color: #fff;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+}
+
+/* ========== FORMULÁRIO DE CONTATO ========== */
+#contato {
+    background-color: #f9fafb;
+    padding: 2rem;
+    border-left: 4px solid #f4d03f;
+    border-radius: 6px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: 600;
+    color: #003366;
+}
+
+input, textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+button {
+    width: 130px;
+    background-color: #003366;
+    color: #fff;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #002244;
+    transform: scale(1.05);
+}
+
+/* ========== MODO ESCURO ========== */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #eee;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #111;
+    color: #f4d03f;
+}
+
+.dark-mode nav a {
+    color: #f4d03f;
+}
+
+.dark-mode nav a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.dark-mode table th {
+    background-color: #2a2a2a;
+    color: #f4d03f;
+}
+
+.dark-mode table td {
+    border-color: #555;
+}
+
+/* Ajuste de contraste no modo escuro */
+.dark-mode main,
+.dark-mode section,
+.dark-mode p,
+.dark-mode li,
+.dark-mode h2 {
+    color: #f1f1f1;
+}
+
+/* Títulos e divisores */
+.dark-mode h2 {
+    color: #f4d03f;
+    border-bottom-color: #f4d03f;
+}
+
+/* Imagens */
+.dark-mode img {
+    box-shadow: 0 0 8px rgba(255,255,255,0.2);
+}
+
+/* Links */
+.dark-mode a {
+    color: #66b3ff;
+}
+
+.dark-mode a:hover {
+    color: #f4d03f;
+}
+
+/* Botão de alternância */
+#modo-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 1000;
+}
+
+#modo-btn:hover {
+    background-color: #002244;
+    transform: scale(1.05);
+}
+
+/* ========== RESPONSIVIDADE ========== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    main {
+        padding: 2rem 6%;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .foto, .projeto-img {
+        width: 160px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    main {
+        padding: 1.5rem 6%;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    input, textarea {
+        font-size: 0.95rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+.dark-mode main {
+    background-color: #313131; /* fundo escuro elegante */
+}
+
+/* ========== FORMULÁRIO ESCURO NO MODO ESCURO ========== */
+.dark-mode form {
+    background-color: #1f1f1f;  /* fundo escuro do formulário */
+    border: 1px solid #444;     /* borda sutil para destacar o contorno */
+}
+
+.dark-mode label {
+    color: #f1f1f1;             /* texto dos labels mais claro */
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #2a2a2a;  /* cor de fundo dos campos */
+    color: #f1f1f1;             /* texto dentro dos campos */
+    border: 1px solid #555;
+}
+
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+    color: #aaa;                /* cor do placeholder mais suave */
+}
+
+.dark-mode button {
+    background-color: #f4d03f;  /* botão dourado */
+    color: #1e1e1e;             /* texto escuro no botão */
+}
+
+.dark-mode button:hover {
+    background-color: #ffe97d;  /* amarelo mais claro no hover */
 }
