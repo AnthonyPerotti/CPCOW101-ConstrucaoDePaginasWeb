@@ -181,6 +181,10 @@ button:hover {
     color: #eee;
 }
 
+.dark-mode #contato {
+    background-color: #1a1a1a;
+}
+
 .dark-mode header,
 .dark-mode footer {
     background-color: #111;
