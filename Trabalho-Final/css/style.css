@@ -466,3 +466,28 @@ nav ul {
 .dark-mode .experiencia a {
     color: #f4d03f;
 }
+
+.botao-cv {
+    display: inline-block;
+    background-color: #0065ca;
+    color: white;
+    padding: 0.8rem 1.4rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-cv:hover {
+    background-color: #001f40;
+    transform: scale(1.03);
+}
+
+.dark-mode .botao-cv {
+    background-color: #fffae6;
+    color: #000;
+}
+
+.dark-mode .botao-cv:hover {
+    background-color: #2c2b24;
+}

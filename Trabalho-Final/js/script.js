@@ -55,3 +55,9 @@ if (form) {
         }
     });
 }
+
+// Atualizar automaticamente o ano no footer
+const anoSpan = document.querySelector("#ano");
+if (anoSpan) {
+    anoSpan.textContent = new Date().getFullYear();
+}
