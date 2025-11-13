@@ -1,9 +1,3 @@
-/* ============================================
-   ESTILO FINAL - PORTFÓLIO ACADÊMICO UFSM
-   Autor: Seu Nome
-   Última atualização: 30/10/2025
-   ============================================ */
-
 /* ========== RESET E BASE ========== */
 * {
     margin: 0;
@@ -317,36 +311,64 @@ button:hover {
 }
 
 .dark-mode main {
-    background-color: #313131; /* fundo escuro elegante */
+    background-color: #313131; 
 }
 
 /* ========== FORMULÁRIO ESCURO NO MODO ESCURO ========== */
 .dark-mode form {
-    background-color: #1f1f1f;  /* fundo escuro do formulário */
-    border: 1px solid #444;     /* borda sutil para destacar o contorno */
+    background-color: #1f1f1f;  
+    border: 1px solid #444;     
 }
 
 .dark-mode label {
-    color: #f1f1f1;             /* texto dos labels mais claro */
+    color: #f1f1f1;            
 }
 
 .dark-mode input,
 .dark-mode textarea {
-    background-color: #2a2a2a;  /* cor de fundo dos campos */
-    color: #f1f1f1;             /* texto dentro dos campos */
+    background-color: #2a2a2a;  
+    color: #f1f1f1;             
     border: 1px solid #555;
 }
 
 .dark-mode input::placeholder,
 .dark-mode textarea::placeholder {
-    color: #aaa;                /* cor do placeholder mais suave */
+    color: #aaa;                
 }
 
 .dark-mode button {
-    background-color: #f4d03f;  /* botão dourado */
-    color: #1e1e1e;             /* texto escuro no botão */
+    background-color: #f4d03f;  
+    color: #1e1e1e;             
 }
 
 .dark-mode button:hover {
-    background-color: #ffe97d;  /* amarelo mais claro no hover */
+    background-color: #ffe97d;  
+}
+
+.dark-mode .logo {
+    color: #ffe47a; /* dourado claro */
+}
+
+/* ========== NAVEGAÇÃO COM LOGO E FLEXBOX ========== */
+
+.container-nav {
+    display: flex;
+    justify-content: space-between; /* logo esquerda, menu direita */
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/* Logo simples acadêmica */
+.logo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #f4d03f;
+    letter-spacing: 0.5px;
+}
+
+/* Ajuste para o nav não ficar muito colado */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
 }
